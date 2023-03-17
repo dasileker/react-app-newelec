@@ -1,16 +1,11 @@
-// import logo from './logo.svg';
-// import './App.css';
-import Header from './header';
-import MyComponent from './myComponent';
+import './App.css';
+import Home from './pages/Home';
 
-function App() {
+const App = () => {
   return (
       <div>
-        <Header />
-        <MyComponent />
+        <Home />
       </div>
-      
-    
   );
 }
 

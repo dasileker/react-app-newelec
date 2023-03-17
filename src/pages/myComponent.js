@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MyComponent() {
+const MyComponent = () => {
   return (
     <div className="container my-5">
       <div className="row justify-content-center">

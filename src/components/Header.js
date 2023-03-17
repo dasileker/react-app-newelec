@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BiGlobe, BiFlag } from 'react-icons/bi';
 
-function Header() {
+const Header = () => {
 
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('English');
