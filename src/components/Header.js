@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BiGlobe, BiFlag } from 'react-icons/bi';
+// import { BiGlobe, BiFlag } from 'react-icons/bi';
 
 const Header = () => {
 
