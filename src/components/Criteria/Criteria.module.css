@@ -1,0 +1,30 @@
+.div {
+  /* width: 570px; */
+  /* border: 3px dashed yellow; */
+}
+
+.first_column {
+  border: 3px dashed blue;
+  border-radius: 5px;
+  /* margin: 10px; */
+  /* width: 200px; */
+}
+
+.container {
+  /* width: 1500px; */
+  border: 4px dashed red;
+  padding: 10px;
+  margin: 100px;
+}
+
+.border2 {
+  border: 2px dashed green;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.border3 {
+  border: 2px dashed purple;
+  border-radius: 5px;
+  margin: 10px;
+}

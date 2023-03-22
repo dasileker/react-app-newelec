@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Dropzone from 'react-dropzone';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import styles from './FileUploader.module.css';
 
 function FileUploader() {
   const [file, setFile] = useState(null);
@@ -22,7 +21,7 @@ function FileUploader() {
   }
 
   return (
-    <div>
+    <div className={styles.fileUploader}>
       <Dropzone onDrop={onDrop} accept=".pdf,.ppt,.pptx,.ppsx,.mp4,.avi,.wmv,.mov">
         {({ getRootProps, getInputProps }) => (
           <div {...getRootProps()}>

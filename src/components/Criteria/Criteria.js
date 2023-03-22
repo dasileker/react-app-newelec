@@ -1,28 +1,27 @@
 import React from 'react';
-// import Dropzone from 'react-dropzone';
 import { Container, Row, Col } from 'reactstrap';
 import SelectionFrom from './SelectionForm/SelectionFrom';
 import ImageUploader from './ImageUploader/ImageUploader';
 import FileUploader from './FileUpload/FileUploader';
-
+import styles from './Criteria.module.css';
 
 const Criteria = () => {
   return (
     <section>
-        <Container>
-            <Row className=''>
-          <Col xs="6" className='border rounded mt-4 pr-3'>
+      <Container className={styles.container}>
+        <Row className=''>
+          <Col className={styles.first_column}>
             < SelectionFrom />
           </Col>
-          <Col xs="3" className='border rounded mt-4 pr-3 pl-3'>
+          <Col className={styles.border2}>
             <p>Image</p>
             < ImageUploader />
           </Col>
-          <Col xs="3" className='border rounded mt-4 pl-3'>
+          <Col className={styles.border2}>
             <p>Trainning File</p>
             < FileUploader />
           </Col>
-            </Row>
+        </Row>
       </Container>
     </section>
 
