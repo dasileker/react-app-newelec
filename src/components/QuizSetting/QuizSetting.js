@@ -74,7 +74,7 @@ const CardList = () => {
                   <IoDiceOutline className={`${styles["dice-icon"]} mx-auto`} size={45} style={{ color: "#2A5F9E", marginTop: "25px" }} />
                   <FiInfo className={`${styles["info-icon"]} position-absolute top-0 end-0 p-2`} size={32} color={"gray"} />
                   <CardBody className="text-center">
-                    <p className="my-2">Random Questions</p>
+                    <p className={styles.p}>Random Questions</p>
                     <div className="d-flex align-items-center justify-content-center">
                       
                       <Button className={`${styles["counter-button"]} btn btn-secondary`} onClick={decrementDiceCounter}>-</Button>
@@ -89,7 +89,7 @@ const CardList = () => {
                   <FaStopwatch className={`${styles["dice-icon"]} mx-auto`} size={45} style={{ color: "#FF964E", marginTop: "25px" }} />
                   <FiInfo className={`${styles["info-icon"]} position-absolute top-0 end-0 p-2`} size={32} color={"gray"} />
                   <CardBody className="text-center">
-                    <p className="my-2">Time per question</p>
+                    <p className={styles.p}>Time per question</p>
                     <div className="d-flex align-items-center justify-content-center">
                       <Button className={`${styles["counter-button"]} btn btn-secondary`} onClick={decrementTimeCounter}>-</Button>
                       <span className={`${styles["counter-value"]} me-2`} style={{ width: "79px", height: "14px" }}>{timeCounter}s</span>
@@ -103,7 +103,7 @@ const CardList = () => {
                   <AiFillCheckCircle className={`${styles["dice-icon"]} mx-auto`} size={45} style={{ color: "#47CA5B", marginTop: "25px" }} />
                   <FiInfo className={`${styles["info-icon"]} position-absolute top-0 end-0 p-2`} size={32} color={"gray"} />
                   <CardBody className="text-center">
-                    <p className="my-2">Passing score</p>
+                    <p className={styles.p}>Passing score</p>
                     <div className="d-flex align-items-center justify-content-center">
                       <Button className={`${styles["counter-button"]} btn btn-secondary`} onClick={decrementCheckCounter}>-</Button>
                       <span className={`${styles["counter-value"]} me-2`} style={{ width: "79px", height: "14px" }}>{checkCounter}%</span>
@@ -117,7 +117,7 @@ const CardList = () => {
                   <BiCameraHome className={`${styles["dice-icon"]} mx-auto`} size={45} style={{ color: "#FF3838", marginTop: "25px" }} />
                   <FiInfo className={`${styles["info-icon"]} position-absolute top-0 end-0 p-2`} size={32} color={"gray"} />
                   <CardBody className="text-center">
-                    <p className="my-2">Webcam validation</p>
+                    <p className={styles.p}>Webcam validation</p>
                     <div className="d-flex align-items-center justify-content-center">
                       <label className={`${styles["switch"]}`}>
                         <input type="checkbox" checked={switchStatus} onChange={toggleSwitch} />
@@ -132,7 +132,7 @@ const CardList = () => {
                   <RiTimer2Fill className={`${styles["dice-icon"]} mx-auto`} size={45} style={{ color: "#8C2CAE", marginTop: "25px" }} />
                   <FiInfo className={`${styles["info-icon"]} position-absolute top-0 end-0 p-2`} size={32} color={"gray"} />
                   <CardBody className="text-center">
-                    <p className="my-2">Time expected</p>
+                    <p className={styles.p}>Time expected</p>
                     <div className="d-flex align-items-center justify-content-center">
                       <button className={`${styles["counter-button"]} btn btn-secondary`} onClick={(decrementDurationCounter)}>-</button>
                       <span className={`${styles["counter-value"]} me-2`} style={{ width: "79px", height: "14px" }}>{durationCounter}min</span>

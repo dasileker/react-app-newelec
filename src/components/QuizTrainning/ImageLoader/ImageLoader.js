@@ -27,8 +27,6 @@ const ImagLoader = () => {
         accept="image/*"
         onChange={(e) => onDrop(e.target.files)}
       />
-      {success && <div style={{ color: 'green' }}>File successfully uploaded!</div>}
-      {file && <p>{file.name}</p>}
     </div>
   );
 };

@@ -1,0 +1,35 @@
+.selectForm {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed brown;
+}
+
+.drop {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #616161;
+}
+
+.sub {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #313131;
+}
+
+.sub_sub {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #888888;
+}
+
+
+

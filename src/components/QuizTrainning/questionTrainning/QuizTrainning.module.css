@@ -1,0 +1,177 @@
+.container1 {
+  width: 1000px;
+  border-radius: 5px;
+}
+
+.div {
+  padding-left: 60px;
+}
+
+.container2 {
+  border: 1px solid rgb(209, 207, 207);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.image-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.p {
+  color: #313131;
+  font-size: 15px;
+}
+
+.text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1px;
+  color: #616161;
+}
+
+.h6 {
+  color: #616161;
+}
+
+.customCheckbox {
+  width: 25px;
+  height: 25px;
+  margin: 35px;
+}
+
+.custom-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: rgb(1, 82, 5);
+  color: gray;
+}
+
+.custom-checkbox:checked::after {
+  background-color: green;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-checkbox {
+  width: 25px; /* Adjust the width as needed */
+  height: 25px; /* Adjust the height as needed */
+  cursor: pointer;
+}
+
+.p {
+    font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+/* identical to box height, or 113% */
+  color: #313131;
+}
+
+.p2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #616161;
+
+}
+
+.p3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B4B4B4;
+}
+
+.line {
+  width:  30%;
+}
+
+.label :before {
+  content: "Dust-filter respirator may be used for continuous protection while silica sandis used as the blasting abrasive.";
+  color: gray;
+}
+
+.questionWrapper {
+  width: 800px;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EBEBEB;
+  background: #F8F8F8;;
+  padding-left: 30px;
+  margin: 40px;
+  border-radius: 5px;
+}
+
+.label {
+  color: #616161;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.check-details {
+  border: 1px solid black;
+}
+
+.questionContainer {
+  border: 1px solid #EBEBEB;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30px; /*adjust as needed*/
+  margin: 36px;
+}
+
+.button {
+  background:  #E1EFFF;;
+  color: #2C8EFF;;
+  width: 90%;
+  height: 40px;
+  /* padding: 10px; */
+  border: none;
+  border-radius: 5px;
+  /* margin-top: 20px; */
+}
