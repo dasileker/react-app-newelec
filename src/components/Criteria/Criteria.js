@@ -14,8 +14,8 @@ const Criteria = () => {
             {/* < SelectionFrom /> */}
           </Col>
           <Col className={styles.border2}>
-            {/* <p>Image</p> */}
-            {/* < ImageUploader /> */}
+            {/* <p>Image</p> 
+             < ImageUploader /> */}
           </Col>
           <Col className={styles.border3}>
             <p>Trainning File</p>

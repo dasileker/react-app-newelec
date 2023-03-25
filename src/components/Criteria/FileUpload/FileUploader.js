@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import { Col } from 'reactstrap';
+import { AiTwotoneCloseCircle } from 'react-icons/ai';
 import Dropzone from 'react-dropzone';
 import styles from './FileUploader.module.css';
 
@@ -26,18 +28,19 @@ function FileUploader() {
         {({ getRootProps, getInputProps }) => (
           <div {...getRootProps()}>
             <input {...getInputProps()} />
-            <p>Drag 'n' drop a video, PDF, or slideshow file here, or click to select a file</p>
+            <p className={styles.p}>Drag 'n' drop a video, PDF.
+              <span>Or <a className={styles.a}>Browse a file</a></span>
+            </p>
           </div>
         )}
       </Dropzone>
       {success && (
-        <div style={{ backgroundColor: 'green', color: 'white', padding: '10px' }}>
-          Completed
-          {file && <p>{file.name}</p>}
-          <button onClick={handleSuccessClose} style={{ marginLeft: '10px' }}>
-            {/* <FontAwesomeIcon icon={faTimes} /> */}
-            close
-          </button>
+        <div className={styles.successContainer}>
+          {file && <p className={styles.tag}> Completed {file.name}</p>}
+          <button onClick={handleSuccessClose} className={styles.closeButton}>
+            <AiTwotoneCloseCircle />
+            </button>
+          
         </div>
       )}
       <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -47,7 +50,7 @@ function FileUploader() {
       </div>
       <label>
         Media URL:
-        <input type="text" value={mediaUrl} onChange={handleMediaUrlChange} />
+        <input type="text" value={mediaUrl} onChange={handleMediaUrlChange} placeholder="Add your URL here" />
       </label>
     </div>
   );
