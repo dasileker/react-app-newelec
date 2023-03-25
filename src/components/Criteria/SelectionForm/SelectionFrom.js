@@ -78,7 +78,7 @@ const SelectionFrom = () => {
         <Col>
           <FormGroup>
             <Label className={styles.drop}>Valid For</Label>
-            <Input type="select" value={select3} onChange={(e) => setSelect3(e.target.value)}>
+            <Input className={styles.valid} type="select" value={select3} onChange={(e) => setSelect3(e.target.value)}>
               <option value="Option 1" className={styles.sub}>1 Year</option>
               <option value="Option 2" className={styles.sub}>2 Years</option>
               <option value="Option 3" className={styles.sub}>3 Years</option>

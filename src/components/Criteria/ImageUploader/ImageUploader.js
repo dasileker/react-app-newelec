@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Col } from 'reactstrap';
 import Dropzone from 'react-dropzone';
 import styles from './ImageUploader.module.css';
 
@@ -12,7 +13,7 @@ const ImageUploader = () => {
   };
 
   return (
-    <div className={styles.imageUploader}>
+    <Col className={styles.imageUploader}>
       <Dropzone onDrop={onDrop} accept=".pdf,.doc,docx,.text">
         {({ getRootProps, getInputProps }) => (
           <div {...getRootProps()}>
@@ -27,7 +28,7 @@ const ImageUploader = () => {
         <div style={{ color: 'green' }} className={styles.load}>File succe dssfully uploaded! {file && <p>{file.name}</p>}</div>
       )}
       <p className={styles.p}>Only JPG, PNG files are allowed. Image must be less than 2 MB</p>
-    </div>
+    </Col>
   );
 }
 

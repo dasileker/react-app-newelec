@@ -1,5 +1,5 @@
 .selectForm {
-  width: 100%;
+  width: 200%;
   height: 100%;
   border: 2px dashed brown;
 }
@@ -11,6 +11,10 @@
   font-size: 12px;
   line-height: 14px;
   color: #616161;
+}
+
+.valid {
+  width: 40px;
 }
 
 .sub {

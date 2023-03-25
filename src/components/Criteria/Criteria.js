@@ -7,23 +7,23 @@ import styles from './Criteria.module.css';
 
 const Criteria = () => {
   return (
-    <section>
+    // <section className={styles.section}>
       <Container className={styles.container}>
         <Row className=''>
           <Col className={styles.first_column}>
-            < SelectionFrom />
+            {/* < SelectionFrom /> */}
           </Col>
           <Col className={styles.border2}>
-            <p>Image</p>
-            < ImageUploader />
+            {/* <p>Image</p> */}
+            {/* < ImageUploader /> */}
           </Col>
-          <Col className={styles.border2}>
+          <Col className={styles.border3}>
             <p>Trainning File</p>
             < FileUploader />
           </Col>
         </Row>
       </Container>
-    </section>
+    // </section>
 
   )
 }
