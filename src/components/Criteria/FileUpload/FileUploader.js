@@ -28,8 +28,9 @@ function FileUploader() {
         {({ getRootProps, getInputProps }) => (
           <div {...getRootProps()}>
             <input {...getInputProps()} />
+
             <p className={styles.p}>Drag 'n' drop a video, PDF.
-              <span>Or <a className={styles.a}>Browse a file</a></span>
+              <span>Or <a href='#' className={styles.a}>Browse a file</a></span>
             </p>
           </div>
         )}
@@ -40,9 +41,12 @@ function FileUploader() {
           <button onClick={handleSuccessClose} className={styles.closeButton}>
             <AiTwotoneCloseCircle />
             </button>
-          
         </div>
       )}
+
+      <div>
+        <p className={styles.required}>*Only Video, PDF and SlideShow files are allowed</p>
+      </div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <hr style={{ flexGrow: 1 }} />
         <span style={{ margin: '0 10px' }}>OR</span>

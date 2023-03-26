@@ -8,6 +8,8 @@ const SelectionFrom = () => {
   const [select3, setSelect3] = useState('');
   const [select4, setSelect4] = useState('');
   const [select5, setSelect5] = useState('');
+  const [select6, setSelect6] = useState('');
+  const [select7, setSelect7] = useState('');
   const [description, setDescription] = useState('');
 
 
@@ -76,9 +78,9 @@ const SelectionFrom = () => {
           </FormGroup>
         </Col>
         <Col>
-          <FormGroup>
+          <FormGroup className={styles.valid} >
             <Label className={styles.drop}>Valid For</Label>
-            <Input className={styles.valid} type="select" value={select3} onChange={(e) => setSelect3(e.target.value)}>
+            <Input type="select" value={select3} onChange={(e) => setSelect3(e.target.value)}>
               <option value="Option 1" className={styles.sub}>1 Year</option>
               <option value="Option 2" className={styles.sub}>2 Years</option>
               <option value="Option 3" className={styles.sub}>3 Years</option>
@@ -88,7 +90,7 @@ const SelectionFrom = () => {
       </Row>
       <Row>
         <Col>
-          <FormGroup>
+          <FormGroup className={styles.valid2} >
             <Label className={styles.drop}>Trainig</Label>
             <Input type="select" value={select4} onChange={(e) => setSelect4(e.target.value)}>
               {/* <option value="">Select 4</option> */}
@@ -99,9 +101,9 @@ const SelectionFrom = () => {
           </FormGroup>
         </Col>
         <Col>
-          <FormGroup>
+          <FormGroup className={styles.valid3} >
             <Label className={styles.drop}>Assign To</Label>
-            <Input type="select" value={select4} onChange={(e) => setSelect5(e.target.value)}>
+            <Input type="select" value={select5} onChange={(e) => setSelect5(e.target.value)}>
               {/* <option value="">Select 5</option> */}
               <option value="Option 1" className={styles.sub}>Internal workers</option>
               <option value="Option 2" className={styles.sub}>Option 2</option>
@@ -112,18 +114,18 @@ const SelectionFrom = () => {
       </Row> 
       <Row>
         <Col sm={6}>
-          <FormGroup>
+          <FormGroup className={styles.valid4}>
             <Label className={styles.drop}>Departements</Label>
-            <Input type="select" value={select4} onChange={(e) => setSelect4(e.target.value)}>
+            <Input type="select" value={select6} onChange={(e) => setSelect6(e.target.value)}>
               {/* <option value="">Select Departements </option> */}
               <option value="Select Departements" className={styles.sub_sub}>Select Departements</option>
               <option value="Option 2" className={styles.sub_sub}>Option 2</option>
               <option value="Option 3" className={styles.sub_sub}>Option 3</option>
             </Input>
           </FormGroup>
-          <FormGroup>
+          <FormGroup className={styles.valid5}>
             <Label className={styles.drop}>Functions</Label>
-            <Input type="select" value={select5} onChange={(e) => setSelect5(e.target.value)}>
+            <Input type="select" value={select7} onChange={(e) => setSelect7(e.target.value)}>
               {/* <option value="">Select Functions</option> */}
               <option value="Option 1" className={styles.sub_sub}>Select Functions</option>
               <option value="Option 2" className={styles.sub_sub}>Option 2</option>

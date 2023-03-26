@@ -1,7 +1,6 @@
 .fileUploader {
-  width: 70%;
-  height: 90%;
-  margin-top: -10px;
+  width: 80%;
+  margin: 10px 30px;
 }
 
 .adjust {
@@ -60,4 +59,13 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+.required {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B4B4B4;
 }

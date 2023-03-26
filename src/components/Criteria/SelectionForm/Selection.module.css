@@ -1,7 +1,7 @@
 .selectForm {
-  width: 200%;
+  width: 550px;
   height: 100%;
-  border: 2px dashed brown;
+  margin: 10px;
 }
 
 .drop {
@@ -14,16 +14,23 @@
 }
 
 .valid {
-  width: 40px;
+  width: 110px;
+}
+.valid2 {
+  width: 280px;
+}
+.valid3 {
+  width: 180px;
+}
+.valid4 {
+  width: 190px;
+}
+.valid5 {
+  width: 190px;
 }
 
-.sub {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  color: #313131;
+.valid2, .valid4, .valid5 {
+  margin-left: 10px;
 }
 
 .sub_sub {
@@ -34,6 +41,3 @@
   line-height: 14px;
   color: #888888;
 }
-
-
-
